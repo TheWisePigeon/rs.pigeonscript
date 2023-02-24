@@ -978,7 +978,7 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 [[package]]
 name = "leptos"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "cfg-if",
  "leptos_config",
@@ -993,7 +993,7 @@ dependencies = [
 [[package]]
 name = "leptos_actix"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "actix-web",
  "futures 0.3.26",
@@ -1008,7 +1008,7 @@ dependencies = [
 [[package]]
 name = "leptos_config"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "config",
  "fs",
@@ -1021,7 +1021,7 @@ dependencies = [
 [[package]]
 name = "leptos_dom"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "async-recursion",
  "cfg-if",
@@ -1048,7 +1048,7 @@ dependencies = [
 [[package]]
 name = "leptos_integration_utils"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "futures 0.3.26",
  "leptos",
@@ -1060,7 +1060,7 @@ dependencies = [
 [[package]]
 name = "leptos_macro"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "cfg-if",
  "convert_case 0.6.0",
@@ -1081,7 +1081,7 @@ dependencies = [
 [[package]]
 name = "leptos_meta"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "cfg-if",
  "leptos",
@@ -1094,7 +1094,7 @@ dependencies = [
 [[package]]
 name = "leptos_reactive"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "base64 0.21.0",
  "cfg-if",
@@ -1115,7 +1115,7 @@ dependencies = [
 [[package]]
 name = "leptos_router"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "cfg-if",
  "common_macros",
@@ -1140,7 +1140,7 @@ dependencies = [
 [[package]]
 name = "leptos_server"
 version = "0.2.0-beta"
-source = "git+https://github.com/leptos-rs/leptos#efe29fd0570e4690e87b2d306952f7ea5fc432f3"
+source = "git+https://github.com/leptos-rs/leptos#46e6e7629ca3968486ab62b7634faa432c46a2df"
 dependencies = [
  "ciborium",
  "form_urlencoded",
@@ -1787,9 +1787,9 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "1.0.108"
+version = "1.0.109"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d56e159d99e6c2b93995d171050271edb50ecc5288fbc7cc17de8fdce4e58c14"
+checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
 dependencies = [
  "proc-macro2",
  "quote",
