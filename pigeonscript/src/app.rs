@@ -1,6 +1,8 @@
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
+use crate::pages::Posts;
+use crate::pages::PostsProps;
 
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
@@ -20,8 +22,10 @@ pub fn App(cx: Scope) -> impl IntoView {
         // content for this welcome page
         <Router>
             <main>
+                <h1>{"okok"}</h1>
                 <Routes>
                     <Route path="" view=|cx| view! { cx, <HomePage/> }/>
+                    <Route path="/posts" view=|cx| view! { cx, <Posts/> }/>
                 </Routes>
             </main>
         </Router>

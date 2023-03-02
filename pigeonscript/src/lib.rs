@@ -1,4 +1,6 @@
 pub mod app;
+pub mod pages;
+pub mod components;
 use cfg_if::cfg_if;
 
 cfg_if! {
