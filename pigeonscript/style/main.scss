@@ -1,3 +1,8 @@
+$primary : white;
+$secondary : #757575;
+$content: #DCDCDC;
+$metal: #AAA9AD;
+
 body{
 	background-color: black;
 	font-family: 'Oxygen', sans-serif;
@@ -11,13 +16,42 @@ body{
 	a {
 		all: unset;
 		color: gray;
+		font-weight: bold;
+		font-size: x-large;
 		&:hover{
+			cursor: pointer;
 			text-decoration: underline;
 			font-weight: bold;
 		}
 	}
 }
 
-.is_current_url{
-	font-weight: bold;
+.home {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	// flex-direction: column;
+	margin-top: 60px;
+	justify-content: center;
+	h1 {
+		color: $primary;
+		text-align: center;
+		font-weight: bold;
+	}
+	h2 {
+		color: $primary;
+		text-align: center;
+	}
+	p {
+		color: $metal;
+		text-align: center;
+	}
 }
+
+.gradient-text {
+	background: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+  
