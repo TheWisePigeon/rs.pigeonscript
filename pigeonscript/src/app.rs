@@ -1,8 +1,10 @@
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
-use crate::pages::Posts;
-use crate::pages::PostsProps;
+use crate::components::header::Header;
+use crate::components::header::HeaderProps;
+use crate::pages::{ home::Home, home::HomeProps };
+
 
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
@@ -15,32 +17,20 @@ pub fn App(cx: Scope) -> impl IntoView {
         // injects a stylesheet into the document <head>
         // id=leptos means cargo-leptos will hot-reload this stylesheet
         <Stylesheet id="leptos" href="/pkg/leptos_start.css"/>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"/>
         // sets the document title
-        <Title text="Welcome to Leptos"/>
+        <Title text="PigeonScript"/>
 
         // content for this welcome page
         <Router>
             <main>
-                <h1>{"okok"}</h1>
+                <Header />
                 <Routes>
-                    <Route path="" view=|cx| view! { cx, <HomePage/> }/>
-                    <Route path="/posts" view=|cx| view! { cx, <Posts/> }/>
+                    <Route path="" view=|cx| view! { cx, <Home/> }/>
                 </Routes>
             </main>
         </Router>
-    }
-}
-
-/// Renders the home page of your application.
-#[component]
-fn HomePage(cx: Scope) -> impl IntoView {
-    // Creates a reactive value to update the button
-    let (count, set_count) = create_signal(cx, 0);
-    let on_click = move |_| set_count.update(|count| *count += 1);
-
-    view! { cx,
-        <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Click Me: " {count}</button>
     }
 }

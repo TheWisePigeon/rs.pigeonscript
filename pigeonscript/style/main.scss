@@ -1,5 +1,23 @@
-body {
-	font-family: sans-serif;
-	text-align: center;
-	color: red;
+body{
+	background-color: black;
+	font-family: 'Oxygen', sans-serif;
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+	a {
+		all: unset;
+		color: gray;
+		&:hover{
+			text-decoration: underline;
+			font-weight: bold;
+		}
+	}
+}
+
+.is_current_url{
+	font-weight: bold;
 }
