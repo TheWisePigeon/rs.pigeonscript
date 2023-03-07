@@ -34,8 +34,6 @@ body{
 .home {
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	// flex-direction: column;
 	margin-top: 60px;
 	justify-content: center;
 	h1 {
@@ -52,6 +50,31 @@ body{
 		text-align: center;
 	}
 }
+
+.subscribe{
+	padding: 3px;
+	gap: 5px;
+	display: flex;
+	flex-direction: column;
+	input {
+		&:focus{
+			outline: none;
+		}
+	}
+}
+
+.sub_button{
+	all: unset;
+	color: white;
+	text-align: center;
+	width: 100px;
+	background: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
+	margin: auto;
+	padding: 5px;
+	border-radius: 8px;
+
+}
+
 
 .gradient-text {
 	background: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));

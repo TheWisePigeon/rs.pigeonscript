@@ -11,9 +11,12 @@ pub fn Home(cx: Scope) -> impl IntoView{
                     {"Stay up-to-date on the latest web development news and trends, and learn new skills with tutorials and tips, all delivered with a healthy dose of humour"}
                 </p>
             </div>
-            <div>
-                <div></div>
-            </div>
+            <form class="subscribe" >
+                <input  type="text" placeholder="Sup niggae" />
+                <button class="sub_button" >
+                    {"Sign me up! "}
+                </button>
+            </form>
         </main>
     }
 }
