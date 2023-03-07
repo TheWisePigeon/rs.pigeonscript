@@ -6,7 +6,12 @@ $metal: #AAA9AD;
 body{
 	background-color: black;
 	font-family: 'Oxygen', sans-serif;
+	&::-webkit-scrollbar{
+		display: none;
+	}
 }
+
+
 
 .header{
 	width: 100%;
